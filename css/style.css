@@ -163,3 +163,81 @@
     font-size: 17px;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+/* ===================================== */
+/*               SECTION                 */
+/* ===================================== */
+
+
+
+.burger-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.burger-section {
+    height: 500px;
+    background-image: url("../assets/image/Group\ 23.png");
+    background-position: 50% 88.46%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+}
+
+.burger-flex {
+    display: flex;
+}
+
+.burger-text {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.burger-text .burger-p1 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.burger-text h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 50px;
+    color: #fff;
+    padding: 10px 0 50px 0;
+}
+
+
+
+.burger-flex-p {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.burger-flex-p p {
+    color: #fff;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 120px;
+    padding: 18px 52px;
+    cursor: pointer;
+}
+
+.burger-img img {
+    width: 550px;
+    margin-top: 80px;
+    margin-right: 40px;
+}
