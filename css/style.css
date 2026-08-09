@@ -552,3 +552,78 @@
 /* ===================================== */
 /*               SECTION7                */
 /* ===================================== */
+
+
+.burgers-container {
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.burgers-container .Fries {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 44px;
+    color: #FC8A06;
+    padding: 95px 0 40px 0;
+}
+
+.burgers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.burgers-card {
+    display: flex;
+    width: 470px;
+    background-color: #fdfdfd;
+    height: 245px;
+    padding: 25px;
+    border-radius: 10px;
+    gap: 6px;
+
+}
+
+.burgers-card1,
+.burgers-card2,
+.burgers-card3,
+.burgers-card4,
+.burgers-card5,
+.burgers-card6 {
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.burgers-text span {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+
+.burgesr-text {
+    padding-top: 200px;
+}
+
+.burgers-text p {
+    padding-top: 20px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.burgers-text h5 {
+    padding-top: 20px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+
+.burgers-img img {
+    margin-top: 10px;
+    width: 180px;
+}
