@@ -289,3 +289,67 @@
 /* ===================================== */
 /*               SECTION3                */
 /* ===================================== */
+
+
+.menu-section {
+    background: #FC8A06;
+    height: 100px;
+}
+
+.menu-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.menu-text {
+    padding-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-text p {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 21px;
+    color: #fff;
+}
+
+.menu-text p span {
+    cursor: pointer;
+    background: #03081F;
+    border-radius: 60px;
+    padding: 3px 20px;
+}
+
+
+
+/* ===================================== */
+/*               SECTION4                */
+/* ===================================== */
+
+
+.vegan-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.vegan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vegan-text1 {
+    background-image: url(../assets/image/Group\ 8.png);
+    height: 325px;
+}
+
+.vegan-text1 {
+    background-image: url(../assets/image/Group\ 8\ \(2\).png);
+    height: 325px;
+}
+
+.vegan-text1 {
+    background-image: url(../assets/image/Group\ 8.png);
+    height: 325px;
+}
