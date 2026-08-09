@@ -331,25 +331,55 @@
 
 .vegan-container {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
+
 
 .vegan-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
 }
+
 
 .vegan-text1 {
     background-image: url(../assets/image/Group\ 8.png);
     height: 325px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-.vegan-text1 {
+
+.vegan-text2 {
+    background-image: url(../assets/image/Group\ 8\ \(1\).png);
+    height: 325px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.vegan-text3 {
     background-image: url(../assets/image/Group\ 8\ \(2\).png);
     height: 325px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-.vegan-text1 {
-    background-image: url(../assets/image/Group\ 8.png);
-    height: 325px;
+
+.vegan-text p {
+    padding-top: 238px;
+    padding-left: 30px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    color: #FC8A06;
+}
+
+
+.vegan-text h1 {
+    padding-left: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
 }
