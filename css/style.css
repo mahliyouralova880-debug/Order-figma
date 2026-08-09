@@ -171,7 +171,7 @@
 
 
 /* ===================================== */
-/*               SECTION                 */
+/*               SECTION1                */
 /* ===================================== */
 
 
@@ -241,3 +241,51 @@
     margin-top: 80px;
     margin-right: 40px;
 }
+
+
+
+
+
+
+/* ===================================== */
+/*               SECTION2                */
+/* ===================================== */
+
+
+.from-container {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+
+.from-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.from-text p {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+}
+
+.from-input input {
+    width: 344px;
+    height: 63px;
+    border-radius: 120px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #03081F;
+    color: #03081F;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+/* ===================================== */
+/*               SECTION3                */
+/* ===================================== */
