@@ -157,6 +157,10 @@
     cursor: pointer;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .navbar_flex2 .navbar_btn2 a {
     color: #fff;
     font-family: "Poppins";
@@ -1067,4 +1071,88 @@ footer {
 .footer-bottom-links a {
     color: #fff;
     text-decoration: none;
+}
+
+
+
+
+
+
+/* ===================================== */
+/*                MEDIA                  */
+/* ===================================== */
+
+@media screen and (max-width:768px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar_flex2 {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: 90px;
+    }
+
+    .navbar_logo a img {
+        width: 200px;
+    }
+
+    .navbar_flex {
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    .menu-icon img {
+        width: 50px;
+    }
+
+
+    .burger-section {
+        height: 350px;
+    }
+
+
+    .burger-text {
+        display: none;
+    }
+
+
+    .burger-img img {
+        width: 300px;
+        margin-left: 40px;
+    }
+
+
+    .from-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .from-text p {
+        text-align: center;
+    }
+
+    .from-input input {
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+
+    .menu-section {
+        height: 670px;
+    }
+
+    .menu-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .menu-text p {
+        padding-top: 8px;
+        font-size: 30px;
+    }
+
 }
