@@ -729,3 +729,71 @@
     padding-top: 100px;
     padding-left: 50px;
 }
+
+
+
+/* ===================================== */
+/*               SECTION9                */
+/* ===================================== */
+
+.location-container {
+    max-width: 1460px;
+    margin: 70px auto;
+    height: 700px;
+    background-image: url("../assets/image/Rectangle\ 52.png");
+    background-position: 50% 88.46%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding-top: 75px;
+    padding-left: 130px;
+}
+
+.location-card {
+    background-color: #03081F;
+    width: fit-content;
+    padding: 80px 50px;
+    border-radius: 16px;
+}
+
+
+
+.location-text h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.location-text h4 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 22px;
+    color: #FC8A06;
+    padding-top: 5px;
+}
+
+.location-text p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 28px 0;
+}
+
+
+.location-text span {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+}
+
+
+.location-text h3 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 24px;
+    color: #FC8A06;
+}
