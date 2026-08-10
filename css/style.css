@@ -1155,4 +1155,22 @@ footer {
         font-size: 30px;
     }
 
+
+
+    .vegan-container {
+        max-width: 1460px;
+        margin: 100px auto;
+    }
+
+
+
+    .vegan-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 1.2rem;
+    }
+
+
+
+
 }
