@@ -627,3 +627,105 @@
     margin-top: 10px;
     width: 180px;
 }
+
+
+
+/* ===================================== */
+/*               SECTION8                */
+/* ===================================== */
+
+
+.information-container {
+    max-width: 1460px;
+    margin: 160px auto;
+    background: #FAFAFA;
+    box-shadow: 5px 1px 23px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.information-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-icon1,
+.information-icon2,
+.information-icon3 {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+
+.information-icon1 h1,
+.information-icon2 h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+    color: #03081F;
+}
+
+
+
+.information-text1 p span {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    color: #03081F;
+}
+
+
+
+.information-text2 h5 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    color: #03081F;
+    margin-top: 20px;
+}
+
+
+.information-text1 p,
+.information-text2 p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 17px;
+    color: #03081F;
+    padding-top: 20px;
+}
+
+
+.information-text3 {
+    color: #fff;
+    background-color: #03081F;
+    padding: 100px 0;
+    padding: 100px 60px;
+}
+
+.information-text3 p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.information-text3 p span {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.information-icon3 h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.information-text1,
+.information-text2 {
+    padding-top: 100px;
+    padding-left: 50px;
+}
