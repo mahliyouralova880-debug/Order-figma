@@ -13,7 +13,7 @@
 
 .navbar {
     background: #FAFAFA;
-    max-width: 1300px;
+    max-width: 1460px;
     margin: 0 auto;
     border: 1px solid #E1E1E1;
     border-bottom-right-radius: 12px;
@@ -157,10 +157,6 @@
     cursor: pointer;
 }
 
-.menu-icon {
-    display: none;
-}
-
 .navbar_flex2 .navbar_btn2 a {
     color: #fff;
     font-family: "Poppins";
@@ -181,13 +177,13 @@
 
 
 .burger-container {
-    max-width: 1300px;
+    max-width: 1460px;
     margin: 0 auto;
 }
 
 .burger-section {
     height: 500px;
-    background-image: url("../assets/image/Group\ 23.png");
+    background-image: url("../assets/image\ copy//Group\ 23\ \(3\).png");
     background-position: 50% 88.46%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,7 +204,7 @@
     font-family: "Poppins";
     font-weight: 400;
     font-size: 20px;
-    color: #fff;
+    color: #03081F;
     padding-top: 180px;
 }
 
@@ -216,7 +212,7 @@
     font-family: "Poppins";
     font-weight: 600;
     font-size: 50px;
-    color: #fff;
+    color: #03081F;
     padding: 10px 0 50px 0;
 }
 
@@ -234,10 +230,11 @@
     font-family: "Poppins";
     font-weight: 600;
     font-size: 18px;
-    border: 2px solid #fff;
+    border: 2px solid #03081F;
     border-radius: 120px;
     padding: 18px 52px;
     cursor: pointer;
+    background-color: #03081F;
 }
 
 .burger-img img {
@@ -251,391 +248,138 @@
 
 
 
+
+
+.burgers-card1,
+.burgers-card2,
+.burgers-card3,
+.burgers-card4,
+.burgers-card5,
+.burgers-card6 {
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.burgers-text span {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+
+.burgesr-text {
+    padding-top: 200px;
+}
+
+.burgers-text p {
+    padding-top: 20px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.burgers-text h5 {
+    padding-top: 20px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+
+.burgers-img img {
+    margin-top: 10px;
+    width: 180px;
+}
+
+
+
+
 /* ===================================== */
 /*               SECTION2                */
 /* ===================================== */
 
 
-.from-container {
-    max-width: 1200px;
-    margin: 50px auto;
+.burgers-container {
+    max-width: 1460px;
+    margin: 0 auto;
 }
 
-
-.from-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.from-text p {
+.burgers-container .Fries {
     font-family: "Poppins";
     font-weight: 700;
-    font-size: 32px;
+    font-size: 44px;
+    color: #FC8A06;
+    padding: 95px 0 40px 0;
+}
+
+.burgers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.burgers-card {
+    display: flex;
+    width: 470px;
+    background-color: #fdfdfd;
+    height: 245px;
+    padding: 25px;
+    border-radius: 10px;
+    gap: 6px;
+
+}
+
+.burgers-card1,
+.burgers-card2,
+.burgers-card3,
+.burgers-card4,
+.burgers-card5,
+.burgers-card6 {
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.burgers-text span {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
     color: #000;
 }
 
-.from-input input {
-    width: 344px;
-    height: 63px;
-    border-radius: 120px;
-    padding: 10px 20px;
-    outline: none;
-    border: 1px solid #03081F;
-    color: #03081F;
+
+.burgesr-text {
+    padding-top: 200px;
+}
+
+.burgers-text p {
+    padding-top: 20px;
     font-family: "Poppins";
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.burgers-text h5 {
+    padding-top: 20px;
+    font-family: "Poppins";
+    font-weight: 700;
     font-size: 18px;
+    color: #000;
+}
+
+
+.burgers-img img {
+    margin-top: 10px;
+    width: 180px;
 }
 
 
 
 /* ===================================== */
 /*               SECTION3                */
-/* ===================================== */
-
-
-.menu-section {
-    background: #FC8A06;
-    height: 100px;
-}
-
-.menu-container {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.menu-text {
-    padding-top: 33px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu-text p {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 21px;
-    color: #fff;
-}
-
-.menu-text p span {
-    cursor: pointer;
-    background: #03081F;
-    border-radius: 60px;
-    padding: 3px 20px;
-}
-
-
-
-/* ===================================== */
-/*               SECTION4                */
-/* ===================================== */
-
-
-.vegan-container {
-    max-width: 1460px;
-    margin: 100px auto;
-}
-
-
-
-.vegan-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.2rem;
-}
-
-
-.vegan-text1 {
-    background-image: url(../assets/image/Group\ 8.png);
-    height: 325px;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-
-.vegan-text2 {
-    background-image: url(../assets/image/Group\ 8\ \(1\).png);
-    height: 325px;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-
-.vegan-text3 {
-    background-image: url(../assets/image/Group\ 8\ \(2\).png);
-    height: 325px;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-
-.vegan-text p {
-    padding-top: 238px;
-    padding-left: 30px;
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 18px;
-    color: #FC8A06;
-}
-
-
-.vegan-text h1 {
-    padding-left: 30px;
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 28px;
-    color: #fff;
-}
-
-
-
-/* ===================================== */
-/*               SECTION5                */
-/* ===================================== */
-
-.burgers-container {
-    max-width: 1460px;
-    margin: 0 auto;
-}
-
-.burgers-container h1 {
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 44px;
-    color: #000;
-    padding-bottom: 35px;
-}
-
-.burgers-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
-
-.burgers-card {
-    display: flex;
-    width: 470px;
-    background-color: #fdfdfd;
-    height: 245px;
-    padding: 25px;
-    border-radius: 10px;
-    gap: 6px;
-
-}
-
-.burgers-card1,
-.burgers-card2,
-.burgers-card3,
-.burgers-card4,
-.burgers-card5,
-.burgers-card6 {
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
-}
-
-
-.burgers-text span {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
-}
-
-
-.burgesr-text {
-    padding-top: 200px;
-}
-
-.burgers-text p {
-    padding-top: 20px;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-}
-
-.burgers-text h5 {
-    padding-top: 20px;
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 18px;
-    color: #000;
-}
-
-
-.burgers-img img {
-    margin-top: 10px;
-    width: 180px;
-}
-
-
-
-
-/* ===================================== */
-/*               SECTION6                */
-/* ===================================== */
-
-.burgers-container {
-    max-width: 1460px;
-    margin: 0 auto;
-}
-
-.burgers-container .Fries {
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 44px;
-    color: #FC8A06;
-    padding: 95px 0 40px 0;
-}
-
-.burgers-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
-
-.burgers-card {
-    display: flex;
-    width: 470px;
-    background-color: #fdfdfd;
-    height: 245px;
-    padding: 25px;
-    border-radius: 10px;
-    gap: 6px;
-
-}
-
-.burgers-card1,
-.burgers-card2,
-.burgers-card3,
-.burgers-card4,
-.burgers-card5,
-.burgers-card6 {
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
-}
-
-
-.burgers-text span {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
-}
-
-
-.burgesr-text {
-    padding-top: 200px;
-}
-
-.burgers-text p {
-    padding-top: 20px;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-}
-
-.burgers-text h5 {
-    padding-top: 20px;
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 18px;
-    color: #000;
-}
-
-
-.burgers-img img {
-    margin-top: 10px;
-    width: 180px;
-}
-
-
-
-
-/* ===================================== */
-/*               SECTION7                */
-/* ===================================== */
-
-
-.burgers-container {
-    max-width: 1460px;
-    margin: 0 auto;
-}
-
-.burgers-container .Fries {
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 44px;
-    color: #FC8A06;
-    padding: 95px 0 40px 0;
-}
-
-.burgers-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
-
-.burgers-card {
-    display: flex;
-    width: 470px;
-    background-color: #fdfdfd;
-    height: 245px;
-    padding: 25px;
-    border-radius: 10px;
-    gap: 6px;
-
-}
-
-.burgers-card1,
-.burgers-card2,
-.burgers-card3,
-.burgers-card4,
-.burgers-card5,
-.burgers-card6 {
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
-}
-
-
-.burgers-text span {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
-}
-
-
-.burgesr-text {
-    padding-top: 200px;
-}
-
-.burgers-text p {
-    padding-top: 20px;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-}
-
-.burgers-text h5 {
-    padding-top: 20px;
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 18px;
-    color: #000;
-}
-
-
-.burgers-img img {
-    margin-top: 10px;
-    width: 180px;
-}
-
-
-
-/* ===================================== */
-/*               SECTION8                */
 /* ===================================== */
 
 
@@ -737,7 +481,7 @@
 
 
 /* ===================================== */
-/*               SECTION9                */
+/*               SECTION4                */
 /* ===================================== */
 
 .location-container {
@@ -807,7 +551,7 @@
 
 
 /* ===================================== */
-/*               SECTION10               */
+/*               SECTION5               */
 /* ===================================== */
 
 
@@ -895,7 +639,7 @@
 
 
 /* ===================================== */
-/*               SECTION11               */
+/*               SECTION6               */
 /* ===================================== */
 
 .restaurants-container {
@@ -1071,104 +815,4 @@ footer {
 .footer-bottom-links a {
     color: #fff;
     text-decoration: none;
-}
-
-
-
-
-
-
-
-
-/* ===================================== */
-/*                MEDIA                  */
-/* ===================================== */
-
-@media screen and (max-width:768px) {
-    .navbar {
-        display: none;
-    }
-
-    .navbar_flex2 {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        margin-left: 90px;
-    }
-
-    .navbar_logo a img {
-        width: 200px;
-    }
-
-    .navbar_flex {
-        height: 100px;
-        margin-left: 20px;
-    }
-
-    .menu-icon img {
-        width: 50px;
-    }
-
-
-    .burger-section {
-        height: 350px;
-    }
-
-
-    .burger-text {
-        display: none;
-    }
-
-
-    .burger-img img {
-        width: 300px;
-        margin-left: 40px;
-    }
-
-
-    .from-flex {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .from-text p {
-        text-align: center;
-    }
-
-    .from-input input {
-        margin-left: 25px;
-        margin-top: 20px;
-    }
-
-    .menu-section {
-        height: 670px;
-    }
-
-    .menu-text {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .menu-text p {
-        padding-top: 8px;
-        font-size: 30px;
-    }
-
-
-
-    .vegan-container {
-        max-width: 1460px;
-        margin: 100px auto;
-    }
-
-
-
-    .vegan-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-    }
 }
