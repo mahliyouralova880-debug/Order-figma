@@ -1078,6 +1078,8 @@ footer {
 
 
 
+
+
 /* ===================================== */
 /*                MEDIA                  */
 /* ===================================== */
@@ -1166,11 +1168,7 @@ footer {
 
     .vegan-grid {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         gap: 1.2rem;
     }
-
-
-
-
 }
