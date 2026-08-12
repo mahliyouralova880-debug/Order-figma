@@ -250,6 +250,487 @@
 
 
 
+
+
+
+
+/* ===================================== */
+/*               SECTION2                */
+/* ===================================== */
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f4f5f7;
+}
+
+.sahifa-konteyner {
+    display: grid;
+    grid-template-columns: 220px 1fr 300px;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 20px auto;
+    align-items: start;
+}
+
+/* ===== CHAP PANEL — MENYU ===== */
+.chap-panel {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.chap-panel__sarlavha {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.kategoriya-royxati {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.kategoriya {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.kategoriya.faol {
+    background: #1c2a4a;
+    color: #fff;
+    font-weight: 600;
+}
+
+.kategoriya:hover:not(.faol) {
+    background: #f0f0f0;
+}
+
+.aksiya-karta {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 12px;
+    /* overflow: hidden; */
+    background: #222;
+    height: 180px;
+    color: #fff;
+}
+
+.aksiya-karta__rasm img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.aksiya-karta__chegirma-belgisi {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1c2a4a;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.aksiya-karta__matn {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.aksiya-karta__kichik-sarlavha {
+    font-size: 11px;
+    color: #f5a623;
+    font-weight: 600;
+}
+
+.aksiya-karta__sarlavha {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.aksiya-karta__qoshish-tugmasi {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    color: #222;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ===== MARKAZIY QISM ===== */
+.asosiy-qism__sarlavha-qatori {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.asosiy-qism__sarlavha-qatori h1 {
+    font-size: 24px;
+}
+
+.saralash-tugmasi {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.taom-royxati {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.taom-karta {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.taom-karta__malumot {
+    flex: 1;
+}
+
+.taom-karta__nomi {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.sevimli-belgisi {
+    color: #2ecc71;
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+.achchiqlik-darajasi {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.achchiqlik-darajasi__nofaol {
+    filter: grayscale(1) opacity(0.3);
+}
+
+.taom-karta__tavsif {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    max-width: 320px;
+}
+
+.olcham-tanlash-qatori {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.olcham-tugmasi {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.olcham-tugmasi.faol {
+    background: #1c2a4a;
+    color: #fff;
+    padding: 1 20px;
+}
+
+.olcham-tugmasi__narx {
+    background: #2ecc71;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.katta-olcham-tugmasi {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.katta-olcham-tugmasi__narx {
+    background: #2ecc71;
+    color: #fff;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+.taom-karta__rasm {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-right: 80px;
+}
+
+
+
+/* ===== O'NG PANEL — SAVATCHA ===== */
+.ish-vaqti-banneri {
+    display: flex;
+    align-items: center;
+    background: #f5a623;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.ish-vaqti-banneri img {
+    width: 26px;
+    margin-right: 20px;
+
+}
+
+.savatcha-paneli {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.savatcha-paneli__sarlavha {
+    background: #1c8f4c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.savatcha-paneli__sarlavha img{
+    width: 30px;
+}
+
+.savatcha-royxati {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.savatcha-elementi {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.savatcha-elementi__soni {
+    background: #f5a623;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.savatcha-elementi__malumot {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.savatcha-elementi__narx {
+    color: #1c8f4c;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.savatcha-elementi__nomi {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.savatcha-elementi__izoh {
+    font-size: 11px;
+    color: #999;
+}
+
+.ochirish-tugmasi {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.jami-hisob {
+    padding: 8px 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.jami-hisob__qatori {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #555;
+}
+
+.jami-hisob__chegirma {
+    color: #e74c3c;
+}
+
+.tolov-tugmasi {
+    width: calc(100% - 32px);
+    margin: 14px 16px 0;
+    background: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.kupon-qatori {
+    width: calc(100% - 32px);
+    margin: 10px 16px 0;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+}
+
+.kupon-qatori__plyus {
+    color: #1c8f4c;
+    font-weight: 700;
+}
+
+.yetkazish-tanlovi {
+    display: flex;
+    gap: 8px;
+    margin: 14px 16px 0;
+}
+
+.yetkazish-tugmasi {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.yetkazish-tugmasi.faol {
+    border-color: #1c8f4c;
+    background: #eafaf0;
+}
+
+.yetkazish-tugmasi__ikonka {
+    font-size: 16px;
+}
+
+.yetkazish-tugmasi__vaqti {
+    color: #999;
+    font-size: 10px;
+}
+
+.buyurtma-tugmasi {
+    width: calc(100% - 32px);
+    margin: 14px 16px 16px;
+    background: #1c8f4c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* ===== MOBIL EKRAN ===== */
+@media (max-width: 1000px) {
+    .sahifa-konteyner {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===================================== */
 /*               SECTION2                */
 /* ===================================== */
