@@ -671,12 +671,8 @@ body {
     cursor: pointer;
 }
 
-/* ===== MOBIL EKRAN ===== */
-@media (max-width: 1000px) {
-    .container2 {
-        grid-template-columns: 1fr;
-    }
-}
+
+
 
 /* ===================================== */
 /*               SECTION2                */
@@ -1597,5 +1593,9 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.2rem;
+    }
+
+    .container2 {
+        grid-template-columns: 1fr;
     }
 }
