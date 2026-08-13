@@ -397,7 +397,7 @@
 .burger-section {
     position: relative;
     height: 530px;
-    background-image: url("../assets/image/Group\ 23\ \(5\).png)";
+    background-image: url("../assets/image\ copy//Group\ 23\ \(3\).png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -414,7 +414,6 @@
     height: 100%;
 }
 
-/* Chap Tomon: Matnlar va Tugmalar */
 .burger-text {
     width: 48%;
     z-index: 2;
@@ -439,7 +438,6 @@
     line-height: 1.1;
 }
 
-/* Pill-knopkalar (Ikonkalar bilan) */
 .burger-flex-p {
     display: flex;
     align-items: center;
@@ -467,7 +465,6 @@
     flex-shrink: 0;
 }
 
-/* O'ng Tomon: Rasm Wrapper va Reyting Bloki */
 .burger-img-wrapper {
     position: relative;
     width: 50%;
@@ -486,7 +483,6 @@
     margin: 0;
 }
 
-/* 1. Reyting Bloki (3.4 ⭐ 1,360 reviews) */
 .rating-badge {
     position: absolute;
     bottom: -15px;
@@ -520,8 +516,6 @@
     color: #838799;
     display: block;
 }
-
-/* 2. Pastdagi Apelsin Rangli Badge (Open until 3:00 AM) */
 .open-status {
     left: 30px;
     position: absolute;
@@ -541,10 +535,6 @@
 }
 
 
-
-
-
-/* Burgers Grid Section */
 .burgers-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -553,7 +543,6 @@
     margin: 40px auto;
 }
 
-/* Kartochkalar Dizayni */
 
 .burgers-card1,
 .burgers-card2,
@@ -582,7 +571,6 @@
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Chap Tomon: Matnlar */
 .burgers-text {
     flex: 1;
     padding-right: 15px;
@@ -613,7 +601,6 @@
     color: #03081f;
 }
 
-/* O'ng Tomon: Rasm va Plus Tugmasi */
 .burgers-img {
     position: relative;
     width: 160px;
@@ -627,7 +614,6 @@
     object-fit: contain;
 }
 
-/* Card pastidagi "+" tugmasi */
 .burgers-img::after {
     content: '+';
     position: absolute;
