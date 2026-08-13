@@ -947,7 +947,6 @@ img {
 .social-icon {
     width: 32px;
     height: 32px;
-    background: var(--navy);
     border-radius: 8px;
     display: flex;
     align-items: center;
