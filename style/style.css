@@ -113,8 +113,12 @@
 }
 
 .navbar_container {
-    max-width: 1242px;
+    max-width: 1300px;
     margin: 0 auto;
+}
+
+.menu-icon img {
+    display: none;
 }
 
 
@@ -167,6 +171,208 @@
 
 
 
+.from-container {
+    max-width: 1460px;
+    margin: 30px auto;
+    padding: 20px 40px;
+}
+
+.from-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.from-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #03081f;
+}
+
+.from-input input {
+    width: 320px;
+    padding: 12px 20px 12px 45px;
+    border-radius: 100px;
+    border: 1px solid #d9d9d9;
+    font-size: 15px;
+    outline: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%20888" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    transition: border-color 0.3s;
+}
+
+.from-input input:focus {
+    border-color: #03081f;
+}
+
+
+/* 2. Menu Nav Bar Section (menu-section) */
+.menu-section {
+    background-color: #f5f5f5;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.menu-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.menu-text p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #03081f;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+
+.menu-text p:hover {
+    opacity: 0.7;
+}
+
+/* Offers tugmasi (birinchi element highlight qilingan) */
+.menu-text p:first-child span,
+.menu-text p span {
+    background-color: #03081f;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+
+/* 3. Discount Cards Section (vegan-section) */
+.vegan-section {
+    max-width: 1460px;
+    margin: 100px auto  30px;
+    padding: 0 40px 60px 40px;
+}
+
+.vegan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Card Asosiy Uslubi */
+.vegan-text {
+    position: relative;
+    height: 300px;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.vegan-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+}
+
+.vegan-text::after {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    background: #03081f;
+    color: #fff;
+    padding: 15px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 2;
+}
+
+.vegan-text1::after { content: '-20%'; }
+.vegan-text2::after { content: '-20%'; }
+.vegan-text3::after { content: '-100%'; }
+
+.vegan-text1 {
+    background-image: url(../assets/image/Rectangle\ 46\ \(8\).png);
+}
+
+.vegan-text2 {
+    background-image: url(../assets/image/Rectangle\ 46\ \(8\).png);
+}
+
+.vegan-text3 {
+    background-image: url(../assets/image/Rectangle\ 46\ \(8\).png);
+}
+
+.vegan-text p, 
+.vegan-text h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.vegan-text p {
+    color: #fc8a06;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.vegan-text h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.vegan-text p:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.vegan-text p:last-child::before {
+    content: '+';
+    width: 36px;
+    height: 36px;
+    background-color: #03081f;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+
+
 
 
 
@@ -175,123 +381,263 @@
 /* ===================================== */
 
 
-
+/* Container va Asosiy Section */
 .burger-container {
     max-width: 1460px;
+    height: 600px !;
     margin: 0 auto;
 }
 
 .burger-section {
-    height: 500px;
+    position: relative;
+    height: 530px;
     background-image: url("../assets/image\ copy//Group\ 23\ \(3\).png");
     background-position: 50% 88.46%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-
+    background-position: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
+/* Vertikal O'rtalash (Vertical Align) va Flex */
 .burger-flex {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
+/* Chap Tomon: Matnlar va Tugmalar */
 .burger-text {
-    width: 60%;
-    margin-left: 20px;
+    width: 48%;
+    z-index: 2;
 }
 
 .burger-text .burger-p1 {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    color: #03081F;
-    padding-top: 180px;
+    font-size: 16px;
+    color: #03081f;
+    margin-bottom: 8px;
+    padding-top: 0; /* Ortiqcha padding olib tashlandi */
 }
 
-.burger-text h1 {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 50px;
-    color: #03081F;
-    padding: 10px 0 50px 0;
+.burger-text .burger-p2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #03081f;
+    margin-bottom: 30px;
+    padding: 0; /* Ortiqcha padding olib tashlandi */
+    line-height: 1.1;
 }
 
-
-
+/* Pill-knopkalar (Ikonkalar bilan) */
 .burger-flex-p {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
-
+    gap: 15px;
 }
 
 .burger-flex-p p {
-    color: #fff;
-    font-family: "Poppins";
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    border: 2px solid #03081F;
-    border-radius: 120px;
-    padding: 18px 52px;
+    font-size: 15px;
+    background-color: #03081f;
+    border-radius: 100px;
+    padding: 14px 28px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
-    background-color: #03081F;
+    box-shadow: 0 4px 12px rgba(3, 8, 31, 0.15);
+    border: none;
+}
+
+.burger-flex-p p svg {
+    flex-shrink: 0;
+}
+
+/* O'ng Tomon: Rasm Wrapper va Reyting Bloki */
+.burger-img-wrapper {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .burger-img img {
-    width: 550px;
-    margin-top: 80px;
-    margin-right: 40px;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+/* 1. Reyting Bloki (3.4 ⭐ 1,360 reviews) */
+.rating-badge {
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    background: #ffffff;
+    padding: 16px 22px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    z-index: 3;
+}
+
+.rating-badge h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #03081f;
+    margin: 0;
+    line-height: 1;
+}
+
+.rating-badge .stars {
+    color: #ffc107;
+    font-size: 15px;
+    margin: 4px 0 2px 0;
+}
+
+.rating-badge span {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #838799;
+    display: block;
+}
+
+/* 2. Pastdagi Apelsin Rangli Badge (Open until 3:00 AM) */
+.open-status {
+    left: 30px;
+    position: absolute;
+    bottom: 30px;
+    background-color: #fc8a06;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 50 ;
 }
 
 
 
 
 
+/* Burgers Grid Section */
+.burgers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1460px;
+    margin: 40px auto;
+}
 
-
-
+/* Kartochkalar Dizayni */
 .burgers-card1,
 .burgers-card2,
 .burgers-card3,
 .burgers-card4,
 .burgers-card5,
 .burgers-card6 {
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
 }
 
+.burgers-card1:hover,
+.burgers-card2:hover,
+.burgers-card3:hover,
+.burgers-card4:hover,
+.burgers-card5:hover,
+.burgers-card6:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Chap Tomon: Matnlar */
+.burgers-text {
+    flex: 1;
+    padding-right: 15px;
+}
 
 .burgers-text span {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: #000;
-}
-
-
-.burgesr-text {
-    padding-top: 200px;
+    color: #03081f;
+    display: block;
 }
 
 .burgers-text p {
-    padding-top: 20px;
-    font-family: "Poppins";
+    padding-top: 8px;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    color: #000;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #202425;
 }
 
 .burgers-text h5 {
-    padding-top: 20px;
-    font-family: "Poppins";
+    padding-top: 15px;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #000;
+    color: #03081f;
 }
 
+/* O'ng Tomon: Rasm va Plus Tugmasi */
+.burgers-img {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
 
 .burgers-img img {
-    margin-top: 10px;
-    width: 180px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Card pastidagi "+" tugmasi */
+.burgers-img::after {
+    content: '+';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 40px;
+    height: 40px;
+    background-color: #03081f;
+    color: #ffffff;
+    border-radius: 12px 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 

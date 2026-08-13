@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -74,23 +74,47 @@
     <!--                     SECTION1                      -->
     <!-- ================================================= -->
 
-    <section>
-        <div class="burger-container burger-section">
-            <div class="burger-flex">
-                <div class="burger-text">
-                    <p class="burger-p1">I'm lovin' it!</p>
-                    <h1 class="burger-p2">McDonald’s East London</h1>
-                    <div class="burger-flex-p">
-                        <p>Minimum Order: 12 GBP</p>
-                        <p>Delivery in 20-25 Minutes</p>
-                    </div>
-                </div>
-                <div class="burger-img">
-                    <img src="./assets/image/Rectangle 44.png" alt="">
-                </div>
+    <section class="burger-section burger-container">
+    <div class="burger-flex">
+        <!-- 1-O'ZGARISH: Paddinglar va o'rtalash to'g'ri ishlashi uchun chap taraf -->
+        <div class="burger-text">
+            <p class="burger-p1">I'm lovin' it!</p>
+            <h1 class="burger-p2">McDonald’s East London</h1>
+            
+            <div class="burger-flex-p">
+                <!-- 2-O'ZGARISH: Pill knopkalar ichiga SVG ikonkalar qo'shildi -->
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    Minimum Order: 12 GBP
+                </p>
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M15.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 12c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm14-4.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    Delivery in 20-25 Minutes
+                </p>
             </div>
         </div>
-    </section>
+
+        <!-- 3-O'ZGARISH: Rasm va uning ustiga tushadigan Reyting bloki birga o'raldi -->
+        <div class="burger-img-wrapper">
+            <div class="burger-img">
+                <img src="./assets/image/Rectangle 44.png" alt="McDonalds">
+            </div>
+            
+            <!-- REYTING BLOKI (3.4 ⭐ 1,360 reviews) -->
+            <div class="rating-badge">
+                <h2>3.4</h2>
+                <div class="stars">★★★★☆</div>
+                <span>1,360 reviews</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4-O'ZGARISH: Pastdagi apelsin rangli badge section ning eng pastiga joylashtirildi -->
+</section>
+<div class="open-status">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+    <span>Open until 3:00 AM</span>
+</div>
 
 
     
@@ -119,7 +143,7 @@
     <section class="menu-section">
         <div class="menu-container">
             <div class="menu-text">
-                <p><span>Menu</span></p>
+                <p><span>Offers</span></p>
                 <p>Burgers</p>
                 <p>Fries</p>
                 <p>Snacks</p>
@@ -129,7 +153,7 @@
                 <p>Desserts</p>
                 <p>Hot drinks</p>
                 <p>Sauces</p>
-                <p>Orbit</p>
+                <p>Orbit®</p>
             </div>
         </div>
     </section>
