@@ -1,344 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Order.uk — Feast Your Senses, Fast and Fresh</title>
-<link rel="stylesheet" href="../style/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order.uk — Feast Your Senses, Fast and Fresh</title>
+    <link rel="stylesheet" href="../style/home.css">
 </head>
+
 <body>
- 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="topbar__inner">
-    <div class="topbar__promo"><img src="../assets/icon/🌟.png" alt=""> Get 5% Off your first order, <a href="#" class="link-orange">Promo: ORDER5</a></div>
-    <div class="topbar__location">
-      <span class="pin">
-        <img src="../assets/icon/Location (1).png" alt="">
-      </span> Regent Street, <u>A4</u>, A4201, London
-      <a href="#" class="link-orange">Change Location</a>
-    </div>
-    <div class="topbar__cart">
-      <div class="cart-pill">
-        <span class="cart-icon"><img src="../assets/icon/Full Shopping Basket.png" alt=""></span>
-        <span>23 Items</span>
-        <span class="divider"></span>
-        <span>GBP 79.89</span>
-        <img src="../assets/icon/Forward Button.png" alt="">
-      </div>
-      <button class="cart-arrow" aria-label="Expand cart">↓</button>
-    </div>
-  </div>
-</div>
- 
-<!-- HEADER -->
-<header class="header">
-  <div class="header__inner">
-    <a href="#" class="logo">
-      <img src="../assets/icon/LOGO 1 (1).png" alt="">
-    </a>
-    <nav class="nav">
-      <a href="#" class="nav__link nav__link--pill">Home</a>
-      <a href="#" class="nav__link">Browse Menu</a>
-      <a href="#" class="nav__link">Special Offers</a>
-      <a href="#" class="nav__link">Restaurants</a>
-      <a href="#" class="nav__link">Track Order</a>
+    <nav class="navbar">
+        <div class="container">
+            <div class="Flex_text">
+                <div class="text1 text">
+                    <img src="../assets/icon/🌟.png" alt="">
+                    <p>Get 5% Off your first order, <a href="#">Promo: ORDER5</a></p>
+                </div>
+
+                <div class="text2 text">
+                    <img src="../assets/icon/Location.png" alt="">
+                    <p>Regent Street, A4, A4201, London</p>
+                    <span>Change Location</span>
+                </div>
+                <div class=" text3_flex text">
+                    <div class="order_icon">
+                        <img src="../assets/icon/Full Shopping Basket.png" alt="">
+                    </div>
+                    <div class="order_text">
+                        <p>23 Items</p>
+                    </div>
+                    <div class="order_text">
+                        <p>GBP 79.89</p>
+                    </div>
+                    <div class="order_icon">
+                        <img src="../assets/icon/Forward Button.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-    <button class="login-btn"><span class="login-icon">
-      <img src="../assets/icon/Male User.png" alt="">
-    </span> Login/Signup</button>
-  </div>
-</header>
- 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero__box">
-    <div class="hero__left">
-      <p class="hero__eyebrow">Order Restaurant food, takeaway and groceries.</p>
-      <h1 class="hero__title">Feast Your Senses,<br><span class="orange">Fast and Fresh</span></h1>
-      <p class="hero__sub">Enter a postcode to see what we deliver</p>
-      <form class="hero__search">
-        <input type="text" placeholder="e.g. EC4R 3TE">
-        <button type="submit">Search</button>
-      </form>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__inner">
+            <a href="#" class="logo">
+                <img src="../assets/icon/LOGO 1 (1).png" alt="">
+            </a>
+            <nav class="nav">
+                <a href="#" class="nav__link nav__link--pill">Home</a>
+                <a href="#" class="nav__link">Browse Menu</a>
+                <a href="#" class="nav__link">Special Offers</a>
+                <a href="#" class="nav__link">Restaurants</a>
+                <a href="#" class="nav__link">Track Order</a>
+            </nav>
+            <button class="login-btn"><span class="login-icon">
+                    <img src="../assets/icon/Male User.png" alt="">
+                </span> Login/Signup</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero__box">
+            <!-- Chap taraf: Matn va Qidiruv -->
+            <div class="hero__left">
+                <p class="hero__eyebrow">Order Restaurant food, takeaway and groceries.</p>
+                <h1 class="hero__title">Feast Your Senses,<br><span class="orange">Fast and Fresh</span></h1>
+                <p class="hero__sub">Enter a postcode to see what we deliver</p>
+                <form class="hero__search">
+                    <input type="text" placeholder="e.g. EC4R 3TE">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <!-- O'ng taraf: Apelsin fon, Rasmlar va Notification Cardlar -->
+            <div class="hero__right">
+                <div class="hero__shape"></div>
+
+                <!-- Rasmlar (Markazdagi va orqadagi) -->
+                <div class="hero__images">
+                    <!-- Orqadagi lagmon yeyayotgan qiz -->
+                    <img src="../assets/image/Untitled-2 1.png" alt="Eating Pasta" class="hero__img hero__img--pasta">
+                    <!-- Oldindagi pizza yeyayotgan qiz (Markaziy) -->
+                    <img src="../assets/image/Untitled-1 1.png" alt="Girl eating Pizza"
+                        class="hero__img hero__img--pizza">
+                </div>
+
+                <!-- Raqamlar -->
+                <span class="hero__num hero__num--1">1</span>
+                <span class="hero__num hero__num--2">2</span>
+                <span class="hero__num hero__num--3">3</span>
+
+                <!-- Notification Card 1 -->
+                <div class="order-card order-card--1">
+                    <div class="order-card__row">
+                        <img src="../assets/image/LOGO 2 (1).png" alt="Logo">
+                        <span class="order-card__time">now</span>
+                    </div>
+                    <p class="order-card__title">We've Received your order!</p>
+                    <p class="order-card__sub">Awaiting Restaurant acceptance</p>
+                </div>
+
+                <!-- Notification Card 2 -->
+                <div class="order-card order-card--2">
+                    <div class="order-card__row">
+                        <img src="../assets/image/LOGO 2 (1).png" alt="Logo">
+                        <span class="order-card__time">now</span>
+                    </div>
+                    <p class="order-card__title">
+                        Order Accepted!
+                        <span class="check"><img src="../assets/icon/Tick Box.png" alt="Check"></span>
+                    </p>
+                    <p class="order-card__sub">Your order will be delivered shortly</p>
+                </div>
+
+                <!-- Notification Card 3 -->
+                <div class="order-card order-card--3">
+                    <div class="order-card__row">
+                        <img src="../assets/image/LOGO 2 (1).png" alt="Logo">
+                        <span class="order-card__time">now</span>
+                    </div>
+                    <p class="order-card__title">
+                        Your rider's nearby
+                        <img src="../assets/icon/image.png" alt="Party">
+                    </p>
+                    <p class="order-card__sub">They're almost there – get ready!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEALS -->
+    <section class="deals">
+        <div class="deals__head">
+            <h2>Up to -40% <img src="../assets/icon/image copy.png" alt=""> Order.uk exclusive deals</h2>
+            <div class="deals__filters">
+                <a href="#" class="filter">Vegan</a>
+                <a href="#" class="filter">Sushi</a>
+                <a href="#" class="filter filter--active">Pizza &amp; Fast food</a>
+                <a href="#" class="filter">others</a>
+            </div>
+        </div>
+        <div class="deals__grid">
+            <article class="deal-card">
+                <div class="deal-card__img">
+                    <img src="../assets/image copy/Group 8 (8).png" alt="Chef Burgers London">
+                    <span class="deal-badge">-40%</span>
+                </div>
+                <p class="deal-card__cat">Restaurant</p>
+                <h3 class="deal-card__name">Chef Burgers London</h3>
+            </article>
+            <article class="deal-card">
+                <div class="deal-card__img">
+                    <img src="../assets/image/Group 8 (9).png" alt="">
+                    <span class="deal-badge">-20%</span>
+                </div>
+                <p class="deal-card__cat">Restaurant</p>
+                <h3 class="deal-card__name">Grand Ai Cafe London</h3>
+            </article>
+            <article class="deal-card">
+                <div class="deal-card__img">
+                    <img src="../assets/image copy/Group 8 (8).png" alt="Butterbrot Caf'e London">
+                    <span class="deal-badge">-17%</span>
+                </div>
+                <p class="deal-card__cat">Restaurant</p>
+                <h3 class="deal-card__name">Butterbrot Caf'e London</h3>
+            </article>
+        </div>
+    </section>
+
+    <!-- POPULAR CATEGORIES -->
+    <section class="categories">
+        <h2 class="section-title">Order.uk Popular Categories <img src="../assets/image/image copy.png" alt=""></h2>
+        <div class="categories__grid">
+            <article class="cat-card">
+                <div class="cat-card__img"><img src="../assets/image/Rectangle 13.png" alt="Burgers & Fast food"></div>
+                <p class="cat-card__name">Burgers &amp; Fast food</p>
+                <p class="cat-card__count">21 Restaurants</p>
+            </article>
+            <article class="cat-card">
+                <div class="cat-card__img"><img src="../assets/image/Rectangle 15.png" alt="Salads"></div>
+                <p class="cat-card__name">Salads</p>
+                <p class="cat-card__count">32 Restaurants</p>
+            </article>
+            <article class="cat-card">
+                <div class="cat-card__img"><img src="../assets/image/Rectangle 19.png" alt="Pasta & Casuals"></div>
+                <p class="cat-card__name">Pasta &amp; Casuals</p>
+                <p class="cat-card__count">4 Restaurants</p>
+            </article>
+            <article class="cat-card">
+                <div class="cat-card__img"><img src="../assets/image/Rectangle 21.png" alt="Pizza"></div>
+                <p class="cat-card__name">Pizza</p>
+                <p class="cat-card__count">32 Restaurants</p>
+            </article>
+            <article class="cat-card">
+                <div class="cat-card__img"><img src="../assets/image/Rectangle 23.png" alt="Breakfast"></div>
+                <p class="cat-card__name">Breakfast</p>
+                <p class="cat-card__count">4 Restaurants</p>
+            </article>
+            <article class="cat-card">
+                <div class="cat-card__img"><img src="../assets/image/Rectangle 17 (1).png" alt="Soups"></div>
+                <p class="cat-card__name">Soups</p>
+                <p class="cat-card__count">32 Restaurants</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- POPULAR RESTAURANTS -->
+    <section class="restaurants">
+        <h2 class="section-title">Popular Restaurants</h2>
+        <div class="restaurants__grid">
+            <article class="rest-card">
+                <img src="../assets/image/Rectangle 13 (1).png" alt="McDonald's London">
+                <p class="rest-card__name">McDonald's London</p>
+            </article>
+            <article class="rest-card">
+                <img src="../assets/image/Rectangle 13 (2).png" alt="Papa Johns">
+                <p class="rest-card__name">Papa Johns</p>
+            </article>
+            <article class="rest-card">
+                <img src="../assets/image/Rectangle 13 (3).png" alt="KFC West London">
+                <p class="rest-card__name">KFC West London</p>
+            </article>
+            <article class="rest-card">
+                <img src="../assets/image/Rectangle 13 (4).png" alt="Texas Chicken">
+                <p class="rest-card__name">Texas Chicken</p>
+            </article>
+            <article class="rest-card">
+                <img src="../assets/image/Rectangle 13 (5).png" alt="Burger King">
+                <p class="rest-card__name">Burger King</p>
+            </article>
+            <article class="rest-card">
+                <img src="../assets/image/Rectangle 13 (6).png" alt="Shaurma 1">
+                <p class="rest-card__name">Shaurma 1</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- APP PROMO -->
+    <section class="promo">
+        <div class="promo__banner">
+            <div class="promo__img">
+                <img src="../assets/image/friends-laughing-using-mobiles 2.png" alt="Couple using the Order.uk app">
+            </div>
+            <div class="promo__content">
+                <h2 class="promo__title">Order<span class="badge">UK</span>ing is more</h2>
+                <p class="promo__pill"><span class="orange-underline">Personalised</span> &amp; Instant</p>
+                <p class="promo__sub">Download the Order.uk app for faster ordering</p>
+                <div class="store-badges">
+                    <a href="#"><img src="../assets/image/image copy 2.png" alt="Download on the App Store"
+                            class="store-badge-img"></a>
+                    <a href="#"><img src="../assets/image/image copy 3.png" alt="Get it on Google Play"
+                            class="store-badge-img"></a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__cards">
+            <article class="promo-card promo-card--partner">
+                <img src="../assets/image/Group 8 (12).png" alt="Partner with us — chef in kitchen"
+                    class="promo-card__bg">
+                <span class="promo-card__tag">Earn more with lower fees</span>
+                <div class="promo-card__body">
+                    <p class="promo-card__eyebrow">Signup as a business</p>
+                    <h3>Partner with us</h3>
+                    <button class="btn-orange">Get Started</button>
+                </div>
+            </article>
+            <article class="promo-card promo-card--rider">
+                <img src="../assets/image/Group 8 (14).png" alt="Ride with us — delivery rider" class="promo-card__bg">
+                <span class="promo-card__tag">Avail exclusive perks</span>
+                <div class="promo-card__body">
+                    <p class="promo-card__eyebrow">Signup as a rider</p>
+                    <h3>Ride with us</h3>
+                    <button class="btn-orange">Get Started</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq__head">
+            <h2>Know more about us!</h2>
+            <div class="faq__tabs">
+                <a href="#" class="faq__tab faq__tab--active">Frequent Questions</a>
+                <a href="#" class="faq__tab">Who we are?</a>
+                <a href="#" class="faq__tab">Partner Program</a>
+                <a href="#" class="faq__tab">Help &amp; Support</a>
+            </div>
+        </div>
+        <div class="faq__panel">
+            <div class="faq__list">
+                <button class="faq__item faq__item--active">How does Order.UK work?</button>
+                <button class="faq__item">What payment methods are accepted?</button>
+                <button class="faq__item">Can I track my order in real-time?</button>
+                <button class="faq__item">Are there any special discounts or promotions available</button>
+                <button class="faq__item">Is Order.UK available in my area?</button>
+            </div>
+            <div class="faq__steps">
+                <div class="faq__step">
+                    <img src="../assets/image/order-food 1.png" alt="" class="faq__step-icon">
+                    <h4>Place an Order!</h4>
+                    <p>Place order through our website or Mobile app</p>
+                </div>
+                <div class="faq__step">
+                    <img src="../assets/image/food 1.png" alt="" class="faq__step-icon">
+                    <h4>Track Progress</h4>
+                    <p>Your can track your order status with delivery time</p>
+                </div>
+                <div class="faq__step">
+                    <img src="../assets/image/order 1.png" alt="" class="faq__step-icon">
+                    <h4>Get your Order!</h4>
+                    <p>Receive your order at a lighting fast speed!</p>
+                </div>
+            </div>
+            <p class="faq__desc">Order.UK simplifies the food ordering process. Browse through our diverse menu, select
+                your favorite dishes, and proceed to checkout. Your delicious meal will be on its way to your doorstep
+                in no time!</p>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stats__inner">
+            <div class="stats__item"><span class="stats__num">546+</span><span class="stats__label">Registered
+                    Riders</span></div>
+            <div class="stats__item"><span class="stats__num">789,900+</span><span class="stats__label">Orders
+                    Delivered</span></div>
+            <div class="stats__item"><span class="stats__num">690+</span><span class="stats__label">Restaurants
+                    Partnered</span></div>
+            <div class="stats__item"><span class="stats__num">17,457+</span><span class="stats__label">Food items</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__col footer__col--brand">
+                <a href="#" class="logo"><img src="../assets/image/LOGO 2 (2).png" alt="Order.uk" class="logo__img"></a>
+                <div class="store-badges">
+                    <a href="#"><img src="../assets/image/Group.png" alt="Download on the App Store"
+                            class="store-badge-img"></a>
+                    <a href="#"><img src="../assets/image/image copy 4.png" alt="Get it on Google Play"
+                            class="store-badge-img"></a>
+                </div>
+                <p class="footer__reg">Company # 490039-445, Registered with House of companies.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Get Exclusive Deals in your inbox</h4>
+                <form class="footer__subscribe">
+                    <input type="email" placeholder="youremail@gmail.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="footer__note">we wont spam, read our <a href="#">email policy</a></p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="../assets/icon/Facebook (1).png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="../assets/icon/Instagram (1).png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="../assets/icon/TikTok (1).png" alt="TikTok"></a>
+                    <a href="#" class="social-icon"><img src="../assets/icon/Snapchat (1).png" alt="Snapchat"></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Legal Pages</h4>
+                <a href="#">Terms and conditions</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Modern Slavery Statement</a>
+            </div>
+            <div class="footer__col">
+                <h4>Important Links</h4>
+                <a href="#">Get help</a>
+                <a href="#">Add your restaurant</a>
+                <a href="#">Sign up to deliver</a>
+                <a href="#">Create a business account</a>
+            </div>
+        </div>
+    </footer>
+    <div class="foooter2">
+        <div class="footer__bottom">
+        <span>Order.uk Copyright 2024, All Rights Reserved.</span>
+        <div class="footer__bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Pricing</a>
+            <a href="#">Do not sell or share my personal information</a>
+        </div>
     </div>
-    <div class="hero__right">
-      <div class="hero__shape"></div>
-      <div class="hero__images">
-        <img src="../assets/image/Untitled-1 1.png" alt="">
-        <img src="../assets/image/Untitled-2 1.png" alt="">
-        <img src="" alt="">
-      </div>
-      <span class="hero__num hero__num--1">1</span>
-      <span class="hero__num hero__num--2">2</span>
-      <span class="hero__num hero__num--3">3</span>
-      <div class="order-card order-card--1">
-        <div class="order-card__row"><strong>
-          <img src="../assets/image/LOGO 2 (1).png" alt="">
-        </strong><span class="order-card__time">now</span></div>
-        <p class="order-card__title">We've Received your order!</p>
-        <p class="order-card__sub">Awaiting Restaurant acceptance</p>
-      </div>
-      <div class="order-card order-card--2">
-        <div class="order-card__row"><strong></strong><img src="../assets/image/LOGO 2 (1).png" alt=""></strong><span class="order-card__time">now</span></div>
-        <p class="order-card__title">Order Accepted! <span class="check"><img src="../assets/icon/Tick Box.png" alt=""></span></p>
-        <p class="order-card__sub">Your order will be delivered shortly</p>
-      </div>
-      <div class="order-card order-card--3">
-        <div class="order-card__row"><strong><img src="../assets/image/LOGO 2 (1).png" alt=""></strong><span class="order-card__time">now</span></div>
-        <p class="order-card__title">Your rider's nearby <img src="../assets/icon/image.png" alt=""></p>
-        <p class="order-card__sub">They're almost there – get ready!</p>
-      </div>
     </div>
-  </div>
-</section>
- 
-<!-- DEALS -->
-<section class="deals">
-  <div class="deals__head">
-    <h2>Up to -40%  <img src="../assets/icon/image copy.png" alt=""> Order.uk exclusive deals</h2>
-    <div class="deals__filters">
-      <a href="#" class="filter">Vegan</a>
-      <a href="#" class="filter">Sushi</a>
-      <a href="#" class="filter filter--active">Pizza &amp; Fast food</a>
-      <a href="#" class="filter">others</a>
-    </div>
-  </div>
-  <div class="deals__grid">
-    <article class="deal-card">
-      <div class="deal-card__img">
-        <img src="../assets/image copy/Group 8 (8).png" alt="Chef Burgers London">
-        <span class="deal-badge">-40%</span>
-      </div>
-      <p class="deal-card__cat">Restaurant</p>
-      <h3 class="deal-card__name">Chef Burgers London</h3>
-    </article>
-    <article class="deal-card">
-      <div class="deal-card__img">
-        <img src="../assets/image/Group 8 (9).png" alt="">
-        <span class="deal-badge">-20%</span>
-      </div>
-      <p class="deal-card__cat">Restaurant</p>
-      <h3 class="deal-card__name">Grand Ai Cafe London</h3>
-    </article>
-    <article class="deal-card">
-      <div class="deal-card__img">
-        <img src="../assets/image copy/Group 8 (8).png" alt="Butterbrot Caf'e London">
-        <span class="deal-badge">-17%</span>
-      </div>
-      <p class="deal-card__cat">Restaurant</p>
-      <h3 class="deal-card__name">Butterbrot Caf'e London</h3>
-    </article>
-  </div>
-</section>
- 
-<!-- POPULAR CATEGORIES -->
-<section class="categories">
-  <h2 class="section-title">Order.uk Popular Categories <img src="../assets/image/image copy.png" alt=""></h2>
-  <div class="categories__grid">
-    <article class="cat-card">
-      <div class="cat-card__img"><img src="../assets/image/Rectangle 13.png" alt="Burgers & Fast food"></div>
-      <p class="cat-card__name">Burgers &amp; Fast food</p>
-      <p class="cat-card__count">21 Restaurants</p>
-    </article>
-    <article class="cat-card">
-      <div class="cat-card__img"><img src="../assets/image/Rectangle 15.png" alt="Salads"></div>
-      <p class="cat-card__name">Salads</p>
-      <p class="cat-card__count">32 Restaurants</p>
-    </article>
-    <article class="cat-card">
-      <div class="cat-card__img"><img src="../assets/image/Rectangle 19.png" alt="Pasta & Casuals"></div>
-      <p class="cat-card__name">Pasta &amp; Casuals</p>
-      <p class="cat-card__count">4 Restaurants</p>
-    </article>
-    <article class="cat-card">
-      <div class="cat-card__img"><img src="../assets/image/Rectangle 21.png" alt="Pizza"></div>
-      <p class="cat-card__name">Pizza</p>
-      <p class="cat-card__count">32 Restaurants</p>
-    </article>
-    <article class="cat-card">
-      <div class="cat-card__img"><img src="../assets/image/Rectangle 23.png" alt="Breakfast"></div>
-      <p class="cat-card__name">Breakfast</p>
-      <p class="cat-card__count">4 Restaurants</p>
-    </article>
-    <article class="cat-card">
-      <div class="cat-card__img"><img src="../assets/image/Rectangle 17 (1).png" alt="Soups"></div>
-      <p class="cat-card__name">Soups</p>
-      <p class="cat-card__count">32 Restaurants</p>
-    </article>
-  </div>
-</section>
- 
-<!-- POPULAR RESTAURANTS -->
-<section class="restaurants">
-  <h2 class="section-title">Popular Restaurants</h2>
-  <div class="restaurants__grid">
-    <article class="rest-card">
-      <img src="../assets/image/Rectangle 13 (1).png" alt="McDonald's London">
-      <p class="rest-card__name">McDonald's London</p>
-    </article>
-    <article class="rest-card">
-      <img src="../assets/image/Rectangle 13 (2).png" alt="Papa Johns">
-      <p class="rest-card__name">Papa Johns</p>
-    </article>
-    <article class="rest-card">
-      <img src="../assets/image/Rectangle 13 (3).png" alt="KFC West London">
-      <p class="rest-card__name">KFC West London</p>
-    </article>
-    <article class="rest-card">
-      <img src="../assets/image/Rectangle 13 (4).png" alt="Texas Chicken">
-      <p class="rest-card__name">Texas Chicken</p>
-    </article>
-    <article class="rest-card">
-      <img src="../assets/image/Rectangle 13 (5).png" alt="Burger King">
-      <p class="rest-card__name">Burger King</p>
-    </article>
-    <article class="rest-card">
-      <img src="../assets/image/Rectangle 13 (6).png" alt="Shaurma 1">
-      <p class="rest-card__name">Shaurma 1</p>
-    </article>
-  </div>
-</section>
- 
-<!-- APP PROMO -->
-<section class="promo">
-  <div class="promo__banner">
-    <div class="promo__img">
-      <img src="../assets/image/friends-laughing-using-mobiles 2.png" alt="Couple using the Order.uk app">
-    </div>
-    <div class="promo__content">
-      <h2 class="promo__title">Order<span class="badge">UK</span>ing is more</h2>
-      <p class="promo__pill"><span class="orange-underline">Personalised</span> &amp; Instant</p>
-      <p class="promo__sub">Download the Order.uk app for faster ordering</p>
-      <div class="store-badges">
-        <a href="#"><img src="../assets/image/image copy 2.png" alt="Download on the App Store" class="store-badge-img"></a>
-        <a href="#"><img src="../assets/image/image copy 3.png" alt="Get it on Google Play" class="store-badge-img"></a>
-      </div>
-    </div>
-  </div>
-  <div class="promo__cards">
-    <article class="promo-card promo-card--partner">
-      <img src="../assets/image/Group 8 (12).png" alt="Partner with us — chef in kitchen" class="promo-card__bg">
-      <span class="promo-card__tag">Earn more with lower fees</span>
-      <div class="promo-card__body">
-        <p class="promo-card__eyebrow">Signup as a business</p>
-        <h3>Partner with us</h3>
-        <button class="btn-orange">Get Started</button>
-      </div>
-    </article>
-    <article class="promo-card promo-card--rider">
-      <img src="../assets/image/Group 8 (14).png" alt="Ride with us — delivery rider" class="promo-card__bg">
-      <span class="promo-card__tag">Avail exclusive perks</span>
-      <div class="promo-card__body">
-        <p class="promo-card__eyebrow">Signup as a rider</p>
-        <h3>Ride with us</h3>
-        <button class="btn-orange">Get Started</button>
-      </div>
-    </article>
-  </div>
-</section>
- 
-<!-- FAQ -->
-<section class="faq">
-  <div class="faq__head">
-    <h2>Know more about us!</h2>
-    <div class="faq__tabs">
-      <a href="#" class="faq__tab faq__tab--active">Frequent Questions</a>
-      <a href="#" class="faq__tab">Who we are?</a>
-      <a href="#" class="faq__tab">Partner Program</a>
-      <a href="#" class="faq__tab">Help &amp; Support</a>
-    </div>
-  </div>
-  <div class="faq__panel">
-    <div class="faq__list">
-      <button class="faq__item faq__item--active">How does Order.UK work?</button>
-      <button class="faq__item">What payment methods are accepted?</button>
-      <button class="faq__item">Can I track my order in real-time?</button>
-      <button class="faq__item">Are there any special discounts or promotions available</button>
-      <button class="faq__item">Is Order.UK available in my area?</button>
-    </div>
-    <div class="faq__steps">
-      <div class="faq__step">
-        <img src="../assets/image/order-food 1.png" alt="" class="faq__step-icon">
-        <h4>Place an Order!</h4>
-        <p>Place order through our website or Mobile app</p>
-      </div>
-      <div class="faq__step">
-        <img src="../assets/image/food 1.png" alt="" class="faq__step-icon">
-        <h4>Track Progress</h4>
-        <p>Your can track your order status with delivery time</p>
-      </div>
-      <div class="faq__step">
-        <img src="../assets/image/order 1.png" alt="" class="faq__step-icon">
-        <h4>Get your Order!</h4>
-        <p>Receive your order at a lighting fast speed!</p>
-      </div>
-    </div>
-    <p class="faq__desc">Order.UK simplifies the food ordering process. Browse through our diverse menu, select your favorite dishes, and proceed to checkout. Your delicious meal will be on its way to your doorstep in no time!</p>
-  </div>
-</section>
- 
-<!-- STATS -->
-<section class="stats">
-  <div class="stats__inner">
-    <div class="stats__item"><span class="stats__num">546+</span><span class="stats__label">Registered Riders</span></div>
-    <div class="stats__item"><span class="stats__num">789,900+</span><span class="stats__label">Orders Delivered</span></div>
-    <div class="stats__item"><span class="stats__num">690+</span><span class="stats__label">Restaurants Partnered</span></div>
-    <div class="stats__item"><span class="stats__num">17,457+</span><span class="stats__label">Food items</span></div>
-  </div>
-</section>
- 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer__top">
-    <div class="footer__col footer__col--brand">
-      <a href="#" class="logo"><img src="../assets/image/LOGO 2 (2).png" alt="Order.uk" class="logo__img"></a>
-      <div class="store-badges">
-        <a href="#"><img src="../assets/image/Group.png" alt="Download on the App Store" class="store-badge-img"></a>
-        <a href="#"><img src="../assets/image/image copy 4.png" alt="Get it on Google Play" class="store-badge-img"></a>
-      </div>
-      <p class="footer__reg">Company # 490039-445, Registered with House of companies.</p>
-    </div>
-    <div class="footer__col">
-      <h4>Get Exclusive Deals in your inbox</h4>
-      <form class="footer__subscribe">
-        <input type="email" placeholder="youremail@gmail.com">
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="footer__note">we wont spam, read our <a href="#">email policy</a></p>
-      <div class="social-icons">
-        <a href="#" class="social-icon"><img src="../assets/icon/Facebook (1).png" alt="Facebook"></a>
-        <a href="#" class="social-icon"><img src="../assets/icon/Instagram (1).png" alt="Instagram"></a>
-        <a href="#" class="social-icon"><img src="../assets/icon/TikTok (1).png" alt="TikTok"></a>
-        <a href="#" class="social-icon"><img src="../assets/icon/Snapchat (1).png" alt="Snapchat"></a>
-      </div>
-    </div>
-    <div class="footer__col">
-      <h4>Legal Pages</h4>
-      <a href="#">Terms and conditions</a>
-      <a href="#">Privacy</a>
-      <a href="#">Cookies</a>
-      <a href="#">Modern Slavery Statement</a>
-    </div>
-    <div class="footer__col">
-      <h4>Important Links</h4>
-      <a href="#">Get help</a>
-      <a href="#">Add your restaurant</a>
-      <a href="#">Sign up to deliver</a>
-      <a href="#">Create a business account</a>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <span>Order.uk Copyright 2024, All Rights Reserved.</span>
-    <div class="footer__bottom-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms</a>
-      <a href="#">Pricing</a>
-      <a href="#">Do not sell or share my personal information</a>
-    </div>
-  </div>
-</footer>
- 
 </body>
+
 </html>
- 

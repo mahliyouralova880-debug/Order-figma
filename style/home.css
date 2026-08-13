@@ -62,6 +62,8 @@ img {
 }
 
 .section-title {
+    display: flex;
+    gap: 10px;
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 26px;
@@ -80,66 +82,98 @@ img {
 /* ==========================================================================
    2. TOPBAR (Yuqori ma'lumotlar satri)
    ========================================================================== */
-.topbar {
+
+.navbar {
     background: #FAFAFA;
-    border-bottom: 1px solid var(--gray-line);
-    font-size: 13px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #E1E1E1;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
-.topbar__inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 10px 32px;
+
+.Flex_text {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
 }
 
-.topbar__location {
-    color: var(--text);
-    white-space: nowrap;
-}
-
-.topbar__location u {
-    text-decoration: underline;
-}
-
-.topbar__cart {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.cart-pill {
-    background: var(--orange);
-    color: #ffffff;
-    font-weight: 600;
-    border-radius: var(--radius-pill);
-    padding: 8px 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    white-space: nowrap;
-}
-
-.cart-pill .divider {
-    width: 1px;
-    height: 14px;
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.cart-arrow {
-    background: var(--orange);
-    color: #ffffff;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
+.text {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
 }
+
+.text1 img {
+    width: 25px;
+    margin: 0 15px 0 30px;
+}
+
+.text1 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: Bold;
+    font-size: 13px;
+    color: #000;
+}
+
+.text1 p a {
+    color: #FC8A06;
+    text-decoration: none;
+    border-bottom: 1px solid #FC8A06;
+}
+
+
+.text2 {
+    display: flex;
+    gap: 1rem;
+    padding-left: 120px;
+}
+
+.text2 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+}
+
+
+.text2 span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    border-bottom: 1px solid #FC8A06;
+    color: #FC8A06;
+}
+
+
+.text3_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #028643;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+
+.text3_flex .order_text {
+    color: #fff;
+    padding: 20px 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.text3_flex .order_icon img {
+    width: 26px;
+}
+
+
+.text3_flex .order_icon {
+    padding: 14px 14px;
+}
+
 
 
 /* ==========================================================================
@@ -161,6 +195,7 @@ img {
 }
 
 .logo {
+    width: 170px;
     display: flex;
     align-items: center;
 }
@@ -207,6 +242,7 @@ img {
 /* ==========================================================================
    4. HERO SECTION (Asosiy Banner)
    ========================================================================== */
+/* Hero Container */
 .hero {
     max-width: 1280px;
     margin: 24px auto;
@@ -217,126 +253,148 @@ img {
     border: 1px solid var(--gray-line);
     border-radius: var(--radius-lg);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
+    position: relative;
     overflow: hidden;
-    min-height: 420px;
+    min-height: 480px;
+    background: #ffffff;
 }
 
+/* Chap taraf (Matnlar) */
 .hero__left {
-    padding: 56px 20px 56px 64px;
+    padding: 60px 20px 60px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 14px;
+    gap: 16px;
+    z-index: 2;
 }
 
 .hero__eyebrow {
     color: var(--text-muted);
     font-size: 15px;
+    font-weight: 500;
 }
 
 .hero__title {
-    font-size: 46px;
-    font-weight: 800;
-    line-height: 1.15;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.1;
     letter-spacing: -1px;
+    color: var(--navy);
 }
 
 .hero__sub {
     color: var(--text-muted);
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 5px;
 }
 
+/* Search Input va Button */
 .hero__search {
     display: flex;
-    margin-top: 6px;
-    max-width: 380px;
+    margin-top: 10px;
+    max-width: 300px;
     width: 100%;
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-pill);
+    padding: 4px;
+    background: #ffffff;
 }
 
 .hero__search input {
     flex: 1;
-    border: 1px solid var(--gray-line);
-    border-radius: var(--radius-pill) 0 0 var(--radius-pill);
-    padding: 14px 22px;
+    border: none;
+    padding: 12px 20px;
     font-size: 14px;
     outline: none;
-    min-width: 0;
+    border-radius: var(--radius-pill) 0 0 var(--radius-pill);
 }
 
 .hero__search button {
     background: var(--orange);
     color: #ffffff;
     font-weight: 700;
-    padding: 14px 34px;
-    border-radius: 0 var(--radius-pill) var(--radius-pill) 0;
-    white-space: nowrap;
+    margin-left: -50px;
+    padding: 14px 36px;
+    border-radius: var(--radius-pill);
+    font-size: 15px;
+    transition: background 0.2s;
 }
 
+.hero__search button:hover {
+    background: var(--orange-dark);
+}
+
+/* O'ng taraf (Apelsin Fon va Position) */
 .hero__right {
     position: relative;
-    overflow: hidden;
-    background: var(--orange);
+    height: 100%;
 }
 
+/* Egri apelsin fon */
 .hero__shape {
     position: absolute;
     inset: 0;
     background: var(--orange);
-    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 22%);
+    border-top-left-radius: 200px;
     z-index: 0;
 }
 
+/* Rasmlar joylashuvi */
 .hero__images {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     z-index: 1;
 }
 
-.hero__img {
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-}
-
+/* Markazdagi Pizza yeyayotgan qiz (Chaproqqa va pastga chiqarilgan) */
 .hero__img--pizza {
-    width: 62%;
-    height: 88%;
-    margin-right: -10%;
-    z-index: 2;
-}
-
-.hero__img--pasta {
-    width: 46%;
-    height: 74%;
-    align-self: flex-end;
-    z-index: 1;
-}
-
-.hero__num {
     position: absolute;
-    right: 6%;
-    font-size: 46px;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 0.55);
-    font-style: italic;
+    bottom: -100px;
+    left: -400px;
+    height: 537px;
+    width: 805px;
+    object-fit: contain;
     z-index: 3;
 }
 
-.hero__num--1 { top: 8%; }
-.hero__num--2 { top: 38%; }
-.hero__num--3 { top: 68%; }
+/* O'ng orqadagi lagmon yeyayotgan qiz */
+.hero__img--pasta {
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+    height: 78%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    z-index: 1;
+}
 
+/* Orqa fondagi 1, 2, 3 Raqamlar */
+.hero__num {
+    position: absolute;
+    right: 8%;
+    font-size: 55px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    z-index: 2;
+    font-family: sans-serif;
+}
+
+.hero__num--1 { top: 10%; }
+.hero__num--2 { top: 40%; }
+.hero__num--3 { top: 70%; }
+
+/* Notification Xabarnoma Kartochkalari */
 .order-card {
     position: absolute;
     background: #ffffff;
-    border-radius: 14px;
-    padding: 14px 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    width: 230px;
+    border-radius: 12px;
+    padding: 12px 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 270px;
     z-index: 4;
 }
 
@@ -344,40 +402,43 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
-.order-card .badge {
-    background: var(--orange);
-    color: #ffffff;
-    font-size: 9px;
-    font-weight: 800;
-    padding: 1px 4px;
-    border-radius: 3px;
-    margin-left: 2px;
+.order-card__row img {
+    height: 18px;
+    width: auto;
 }
 
 .order-card__time {
-    color: var(--text-muted);
+    color: #a0a0a0;
     font-size: 11px;
 }
 
 .order-card__title {
     font-weight: 700;
     font-size: 13px;
-    margin-bottom: 2px;
+    color: #03081f;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.order-card__title img {
+    width: 14px;
+    height: 14px;
 }
 
 .order-card__sub {
     color: var(--text-muted);
-    font-size: 12px;
+    font-size: 11px;
+    margin-top: 2px;
 }
 
-.order-card--1 { top: 14%; right: 4%; }
-.order-card--2 { top: 42%; right: 0%; }
-.order-card--3 { top: 70%; right: 6%; }
-
+/* Kartochkalar o'rni */
+.order-card--1 { top: 12%; right: 4%; }
+.order-card--2 { top: 43%; right: 2%; }
+.order-card--3 { top: 72%; right: 6%; }
 
 /* ==========================================================================
    5. DEALS SECTION (Aksiyalar)
@@ -392,13 +453,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
     margin-bottom: 28px;
 }
 
 .deals__head h2 {
-    font-size: 26px;
+    display: flex;
+    font-size: 25px;
     font-weight: 800;
 }
 
@@ -451,16 +511,24 @@ img {
 }
 
 .deal-card__cat {
+    position: absolute;
+    z-index: 2;
     color: var(--orange);
     font-weight: 600;
     font-size: 13px;
-    margin-top: 14px;
+    margin-top: -60px;
+    margin-left: 30px;
 }
 
 .deal-card__name {
+     position: absolute;
+    z-index: 2;
     font-size: 18px;
     font-weight: 700;
     margin-top: 4px;
+    color: white;
+     margin-top: -45px;
+    margin-left: 30px;
 }
 
 
@@ -556,7 +624,8 @@ img {
 }
 
 .promo__banner {
-    border: 2px solid #3B82C4;
+    height: 611px;
+    position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
     display: grid;
@@ -570,8 +639,12 @@ img {
 }
 
 .promo__img img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    z-index: 2;
+    width: 750px;
+    height: 651px;
     object-fit: cover;
 }
 
@@ -581,6 +654,7 @@ img {
     flex-direction: column;
     gap: 14px;
     justify-content: center;
+    margin-left: 90px;
 }
 
 .promo__title {
@@ -591,6 +665,7 @@ img {
     align-items: center;
     gap: 6px;
     flex-wrap: wrap;
+    margin-left: 100px;
 }
 
 .promo__title .badge {
@@ -603,18 +678,23 @@ img {
 }
 
 .promo__pill {
+    width:500px;
+    height: 70px;
     background: var(--navy);
     color: #ffffff;
-    display: inline-flex;
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
     padding: 12px 26px;
     border-radius: var(--radius-pill);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
     gap: 8px;
 }
 
 .promo__sub {
+    margin-left: 100px;
     color: var(--text-muted);
     font-size: 15px;
 }
@@ -622,6 +702,7 @@ img {
 .store-badges {
     display: flex;
     gap: 12px;
+    margin-left: 100px;
     margin-top: 6px;
     flex-wrap: wrap;
 }
@@ -705,7 +786,7 @@ img {
 .faq {
     max-width: 1280px;
     margin: 64px auto 0;
-    padding: 40px 32px;
+    padding: 70px 80px;
     background: var(--gray-bg);
     border-radius: var(--radius-lg);
 }
@@ -726,6 +807,7 @@ img {
 
 .faq__tabs {
     display: flex;
+    align-items: center;
     gap: 26px;
     font-weight: 600;
     color: var(--text-muted);
@@ -734,7 +816,7 @@ img {
 }
 
 .faq__tab--active {
-    color: var(--orange);
+    color: #03081f;
     border: 1.5px solid var(--orange);
     border-radius: var(--radius-pill);
     padding: 10px 22px;
@@ -758,10 +840,10 @@ img {
 
 .faq__item {
     background: none;
-    text-align: left;
-    font-weight: 600;
+    text-align: center;
+    font-weight: 700;
     font-size: 15px;
-    color: var(--text);
+    color: #03081f;
     max-width: 320px;
     width: 100%;
 }
@@ -819,8 +901,7 @@ img {
    ========================================================================== */
 .stats {
     max-width: 1280px;
-    margin: 40px auto 0;
-    padding: 0 32px;
+    margin: 30px auto ;
 }
 
 .stats__inner {
@@ -844,8 +925,8 @@ img {
 
 .stats__num {
     display: block;
-    font-size: 34px;
-    font-weight: 800;
+    font-size: 54px;
+    font-weight: 300;
 }
 
 .stats__label {
@@ -857,20 +938,22 @@ img {
 /* ==========================================================================
    11. FOOTER SECTION (Pastki qism)
    ========================================================================== */
+footer{
+    width: 100%;
+    background: var(--gray-bg);
+}
 .footer {
-    max-width: 1280px;
     margin: 24px auto 0;
-    padding: 0 32px 32px;
 }
 
 .footer__top {
-    border: 2px solid #3B82C4;
+    max-width: 1280px;
+    margin: 0 auto;
     border-radius: var(--radius-lg);
-    background: var(--gray-bg);
     display: grid;
     grid-template-columns: 1.3fr 1.3fr 1fr 1fr;
     gap: 32px;
-    padding: 40px 44px;
+    padding: 40px 0;
 }
 
 .footer__col h4 {
@@ -958,17 +1041,22 @@ img {
     height: 16px;
 }
 
+.foooter2 {
+    width: 100%;
+    background: var(--navy);
+}
+
 .footer__bottom {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
-    background: var(--navy);
     color: #ffffff;
-    padding: 18px 28px;
+    padding: 18px 0;
     border-radius: var(--radius-md);
-    margin-top: 18px;
     font-size: 13px;
 }
 
@@ -1029,13 +1117,69 @@ img {
         gap: 14px;
     }
 
-    .nav {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px;
+    /* ---------- NAVBAR 1 (top promo bar) ---------- */
+    .navbar {
+        border-radius: 0;
+        padding: 10px 14px;
     }
+ 
+    .Flex_text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+ 
+    .text1 img { margin: 0 8px 0 0; }
+ 
+    .text1 p,
+    .text2 p,
+    .text2 span {
+        font-size: 12px;
+    }
+ 
+    .text2 {
+        padding-left: 0;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+ 
+    .text3_flex {
+        width: 100%;
+        border-radius: 12px;
+        justify-content: space-between;
+    }
+ 
+    .text3_flex .order_text {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .navbar_container {
+        padding: 0 16px;
+        max-width: 100%;
+    }
+ 
+    .navbar_flex {
+        height: auto;
+        margin-left: 0;
+        padding: 16px 0;
+        justify-content: space-between;
+    }
+ 
+    .navbar_logo a img { width: 150px; }
+ 
+    .menu-icon {
+        display: block;
+        margin-left: 0;
+    }
+ 
+    .menu-icon img {
+        display: block;
+        width: 32px;
+    }
+ 
+    .navbar_flex2 { display: none; }
+ 
 
     .deals__grid {
         grid-template-columns: 1fr;
