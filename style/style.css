@@ -639,85 +639,13 @@
 
 
 
-/* ===================================== */
-/*               SECTION2                */
-/* ===================================== */
 
-.container1 {
-    max-width: 1500px;
-    margin: 20px auto;
-}
 
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 40px;
-}
 
-.title {
-    font-family: "Poppins";
-    font-size: 22px;
-    font-weight: 800;
-    color: #111;
-}
-
-.search input {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 260px;
-    padding: 10px 16px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    color: #888;
-    font-size: 14px;
-    outline: none;
-}
 
 
 /* ===================================== */
-/*               SECTION3                */
-/* ===================================== */
-
-
-.container2 {
-    max-width: 1500px;
-    margin: 20px auto;
-}
-
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    background: #ff8a00;
-    padding: 10px 0;
-}
-
-.item {
-    color: #fff;
-    cursor: pointer;
-    padding-left: 45px;
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 21px;
-
-}
-
-.active {
-    background: #0a1128;
-    color: #fff;
-    font-weight: 700;
-    font-size: 21px;
-    padding: 8px 25px;
-    font-family: "Poppins";
-    border-radius: 30px;
-
-}
-
-/* ===================================== */
-/*               SECTION2                */
+/*               SECTION5                */
 /* ===================================== */
 
 
