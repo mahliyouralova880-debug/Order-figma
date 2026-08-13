@@ -1,0 +1,1112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F5821F;
+    --orange-dark: #E86F0C;
+    --navy: #101323;
+    --gray-bg: #F4F4F4;
+    --gray-line: #E7E7E7;
+    --text: #101323;
+    --text-muted: #6B6F7B;
+    --footer-dark: #2B2E38;
+    --radius-lg: 24px;
+    --radius-md: 14px;
+    --radius-pill: 999px;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Yordamchi sinflar */
+.orange {
+    color: var(--orange);
+}
+
+.link-orange {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.orange-underline {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 26px;
+}
+
+.btn-orange {
+    background: var(--orange);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 26px;
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+}
+
+
+/* ==========================================================================
+   2. TOPBAR (Yuqori ma'lumotlar satri)
+   ========================================================================== */
+.topbar {
+    background: #FAFAFA;
+    border-bottom: 1px solid var(--gray-line);
+    font-size: 13px;
+}
+
+.topbar__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.topbar__location {
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.topbar__location u {
+    text-decoration: underline;
+}
+
+.topbar__cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-pill {
+    background: var(--orange);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.cart-pill .divider {
+    width: 1px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.cart-arrow {
+    background: var(--orange);
+    color: #ffffff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+/* ==========================================================================
+   3. HEADER (Bosh qism va Menyu)
+   ========================================================================== */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--gray-line);
+}
+
+.header__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    height: 34px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.nav__link--pill {
+    background: var(--orange);
+    color: #ffffff;
+    padding: 10px 26px;
+    border-radius: var(--radius-pill);
+}
+
+.login-btn {
+    background: var(--navy);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 22px;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-icon {
+    background: var(--orange);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* ==========================================================================
+   4. HERO SECTION (Asosiy Banner)
+   ========================================================================== */
+.hero {
+    max-width: 1280px;
+    margin: 24px auto;
+    padding: 0 32px;
+}
+
+.hero__box {
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    min-height: 420px;
+}
+
+.hero__left {
+    padding: 56px 20px 56px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.hero__eyebrow {
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+.hero__title {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.hero__sub {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.hero__search {
+    display: flex;
+    margin-top: 6px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.hero__search input {
+    flex: 1;
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-pill) 0 0 var(--radius-pill);
+    padding: 14px 22px;
+    font-size: 14px;
+    outline: none;
+    min-width: 0;
+}
+
+.hero__search button {
+    background: var(--orange);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 14px 34px;
+    border-radius: 0 var(--radius-pill) var(--radius-pill) 0;
+    white-space: nowrap;
+}
+
+.hero__right {
+    position: relative;
+    overflow: hidden;
+    background: var(--orange);
+}
+
+.hero__shape {
+    position: absolute;
+    inset: 0;
+    background: var(--orange);
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 22%);
+    z-index: 0;
+}
+
+.hero__images {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero__img {
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.hero__img--pizza {
+    width: 62%;
+    height: 88%;
+    margin-right: -10%;
+    z-index: 2;
+}
+
+.hero__img--pasta {
+    width: 46%;
+    height: 74%;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+.hero__num {
+    position: absolute;
+    right: 6%;
+    font-size: 46px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.55);
+    font-style: italic;
+    z-index: 3;
+}
+
+.hero__num--1 { top: 8%; }
+.hero__num--2 { top: 38%; }
+.hero__num--3 { top: 68%; }
+
+.order-card {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    width: 230px;
+    z-index: 4;
+}
+
+.order-card__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.order-card .badge {
+    background: var(--orange);
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+
+.order-card__time {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.order-card__title {
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.order-card__sub {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.order-card--1 { top: 14%; right: 4%; }
+.order-card--2 { top: 42%; right: 0%; }
+.order-card--3 { top: 70%; right: 6%; }
+
+
+/* ==========================================================================
+   5. DEALS SECTION (Aksiyalar)
+   ========================================================================== */
+.deals {
+    max-width: 1280px;
+    margin: 56px auto 0;
+    padding: 0 32px;
+}
+
+.deals__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.deals__head h2 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.deals__filters {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+.filter--active {
+    color: var(--orange);
+    border: 1.5px solid var(--orange);
+    border-radius: var(--radius-pill);
+    padding: 8px 20px;
+}
+
+.deals__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.deal-card__img {
+    position: relative;
+    height: 220px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--gray-bg);
+}
+
+.deal-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deal-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.deal-card__cat {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 14px;
+}
+
+.deal-card__name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+
+/* ==========================================================================
+   6. CATEGORIES SECTION (Kategoriyalar)
+   ========================================================================== */
+.categories {
+    max-width: 1280px;
+    margin: 64px auto 0;
+    padding: 0 32px;
+}
+
+.categories__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+}
+
+.cat-card {
+    border: 1px solid var(--gray-line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.cat-card__img {
+    height: 130px;
+    background: var(--gray-bg);
+    overflow: hidden;
+}
+
+.cat-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-card__name {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 12px 2px;
+}
+
+.cat-card__count {
+    color: var(--orange);
+    font-size: 12px;
+    padding: 0 12px 12px;
+}
+
+
+/* ==========================================================================
+   7. RESTAURANTS SECTION (Restoranlar)
+   ========================================================================== */
+.restaurants {
+    max-width: 1280px;
+    margin: 56px auto 0;
+    padding: 0 32px;
+}
+
+.restaurants__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+}
+
+.rest-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--gray-line);
+}
+
+.rest-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background: var(--gray-bg);
+}
+
+.rest-card__name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+/* ==========================================================================
+   8. PROMO SECTION (Reklama & Hamkorlik)
+   ========================================================================== */
+.promo {
+    max-width: 1280px;
+    margin: 64px auto 0;
+    padding: 0 32px;
+}
+
+.promo__banner {
+    border: 2px solid #3B82C4;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ECECE8;
+    min-height: 320px;
+}
+
+.promo__img {
+    overflow: hidden;
+}
+
+.promo__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo__content {
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+}
+
+.promo__title {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.promo__title .badge {
+    background: var(--orange);
+    color: #ffffff;
+    font-size: 15px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    transform: rotate(-2deg);
+}
+
+.promo__pill {
+    background: var(--navy);
+    color: #ffffff;
+    display: inline-flex;
+    width: fit-content;
+    padding: 12px 26px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 20px;
+    gap: 8px;
+}
+
+.promo__sub {
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+.store-badges {
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+}
+
+.store-badge-img {
+    height: 40px;
+    width: auto;
+}
+
+.promo__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.promo-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    min-height: 260px;
+    display: flex;
+    align-items: flex-end;
+    background: var(--gray-bg);
+}
+
+.promo-card__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.promo-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.75) 100%);
+    z-index: 1;
+}
+
+.promo-card__tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ffffff;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    z-index: 2;
+}
+
+.promo-card__body {
+    position: relative;
+    padding: 28px 32px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.promo-card__eyebrow {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.promo-card__body h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+
+/* ==========================================================================
+   9. FAQ SECTION (Ko'p beriladigan savollar)
+   ========================================================================== */
+.faq {
+    max-width: 1280px;
+    margin: 64px auto 0;
+    padding: 40px 32px;
+    background: var(--gray-bg);
+    border-radius: var(--radius-lg);
+}
+
+.faq__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.faq__head h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.faq__tabs {
+    display: flex;
+    gap: 26px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.faq__tab--active {
+    color: var(--orange);
+    border: 1.5px solid var(--orange);
+    border-radius: var(--radius-pill);
+    padding: 10px 22px;
+}
+
+.faq__panel {
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 30px 40px;
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.faq__item {
+    background: none;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text);
+    max-width: 320px;
+    width: 100%;
+}
+
+.faq__item--active {
+    background: var(--orange);
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+}
+
+.faq__steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.faq__step {
+    background: var(--gray-bg);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    text-align: center;
+}
+
+.faq__step-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 10px;
+}
+
+.faq__step h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.faq__step p {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.faq__desc {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================================================
+   10. STATS SECTION (Statistika)
+   ========================================================================== */
+.stats {
+    max-width: 1280px;
+    margin: 40px auto 0;
+    padding: 0 32px;
+}
+
+.stats__inner {
+    background: var(--orange);
+    border-radius: var(--radius-lg);
+    padding: 36px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: #ffffff;
+}
+
+.stats__item {
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.stats__item:last-child {
+    border-right: none;
+}
+
+.stats__num {
+    display: block;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.stats__label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ==========================================================================
+   11. FOOTER SECTION (Pastki qism)
+   ========================================================================== */
+.footer {
+    max-width: 1280px;
+    margin: 24px auto 0;
+    padding: 0 32px 32px;
+}
+
+.footer__top {
+    border: 2px solid #3B82C4;
+    border-radius: var(--radius-lg);
+    background: var(--gray-bg);
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1fr 1fr;
+    gap: 32px;
+    padding: 40px 44px;
+}
+
+.footer__col h4 {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.footer__col a {
+    display: block;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 12px;
+    text-decoration: underline;
+}
+
+.footer__col--brand .logo__img {
+    filter: none;
+}
+
+.footer__col--brand .store-badges {
+    margin: 16px 0;
+}
+
+.footer__reg {
+    font-size: 12px;
+    color: var(--text-muted);
+    max-width: 220px;
+}
+
+.footer__subscribe {
+    display: flex;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.footer__subscribe input {
+    flex: 1;
+    border: none;
+    border-radius: var(--radius-pill) 0 0 var(--radius-pill);
+    padding: 12px 18px;
+    font-size: 13px;
+    background: #E6E6E6;
+    outline: none;
+    min-width: 0;
+}
+
+.footer__subscribe button {
+    background: var(--orange);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 0 var(--radius-pill) var(--radius-pill) 0;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.footer__note {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.footer__note a {
+    display: inline;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--navy);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: var(--navy);
+    color: #ffffff;
+    padding: 18px 28px;
+    border-radius: var(--radius-md);
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.footer__bottom-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer__bottom-links a {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   12. RESPONSIVE (Moslashuvchanlik va Ekrandan chiqib ketmaslik)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .hero__box {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__right {
+        min-height: 320px;
+    }
+
+    .hero__left {
+        padding: 40px 32px;
+    }
+
+    .categories__grid,
+    .restaurants__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .faq__panel {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .topbar__inner {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header__inner {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .deals__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories__grid,
+    .restaurants__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq__steps {
+        grid-template-columns: 1fr;
+    }
+
+    .promo__banner {
+        grid-template-columns: 1fr;
+    }
+
+    .promo__img {
+        min-height: 200px;
+    }
+
+    .promo__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .stats__inner {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+    }
+
+    .stats__item:nth-child(2) {
+        border-right: none;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__left {
+        padding: 32px 20px;
+    }
+
+    .topbar__inner {
+        padding: 10px 16px;
+    }
+
+    .header__inner,
+    .hero,
+    .deals,
+    .categories,
+    .restaurants,
+    .promo,
+    .faq,
+    .stats,
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
